@@ -1,0 +1,25 @@
+.table_students nav, .Nuesa_section nav {
+  width: 100%;
+  background-color: #ccc;
+  padding:6px;
+}
+.table_students nav input, .Nuesa_section nav input {
+    outline: none; 
+    width: 200px; 
+    border-radius: 6px; 
+    border: none;
+    text-indent: 4px;
+    height: 25px;           
+}
+.a_student {
+  display: flex; 
+  justify-content: space-evenly;  
+  align-items: center; 
+  margin-top: 8px;         
+}
+.a_student img {
+   width: 30px; 
+   height: 30px; 
+   border-radius: 50%; 
+   border: 2px solid var(--esut_gray);            
+}

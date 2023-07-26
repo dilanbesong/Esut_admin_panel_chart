@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css"/>
+    <link rel="stylesheet" href="./styles/studentTable.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>Esut Admin panel</title>
+  </head>
+  <body>
+      <aside class="side_bar">
+      
+         <ul>
+            <li><i class="fa fa-" aria-hidden="true"></i><span>100 level</span> </li>
+            <li><i class="fa fa-" aria-hidden="true"></i><span>200 level</span> </li>
+            <li><i class="fa fa-" aria-hidden="true"></i><span>300 level</span> </li>
+            <li><i class="fa fa-" aria-hidden="true"></i><span>400 level</span> </li>
+            <li><i class="fa fa-" aria-hidden="true"></i><span>500 level</span> </li>
+            <li><i class="fa fa-user" aria-hidden="true"></i><span>profile</span> </li>
+            <li><i class="fa fa-box" aria-hidden="true"></i><span>message</span> </li>
+            <li><i class="fa fa-bell" aria-hidden="true"></i><span>Notification</span> </li>
+         </ul>
+      </aside> 
+      <section class="main_section">
+        <nav class="adminNav">
+           <h4>CEE Admin panel</h4>
+           
+           <div class="theme_adminProfile">
+              <p>theme <i class="fa fa-search" aria-hidden="true"></i></p>
+             <p class="profile"> <img src="esutlogo.jpg" alt="esutlogo"/> <span>Dilan</span></p>
+           </div>
+           
+        </nav>
+          <main>
+            <header>
+                  <div class="year_one_graph">year 1 </div>
+                  <div class="year_two_graph">year 2</div>
+                  <div class="year_three_graph">year 3</div>
+                  <div class="year_four_graph">year 4</div>
+            </header>
+           <div class="year_six_graph">
+              <canvas id="myChart"></canvas>
+           </div>
+           <footer class="students_Data_section">
+               <div class="table_students">
+                  <nav>
+                     <p> 
+                      <i class="fa fa-search" aria-hidden="true"></i> 
+                      <input type="search" placeholder="Find student by reg number" autocomplete="off"/>
+                    </p>
+                  </nav>
+                   <ul class="all_students_container">
+                       <li class="a_student">
+                          <img src="esutlogo.jpg" alt="esutlogo"/>
+                          <span>besongdilan@g...</span>
+                          <span>2019030187292</span>
+                          <span>Dilan...</span>
+                       </li>
+                    </ul>
+               </div>       
+               <div class="Nuesa_section">
+                    <nav>
+                     <p> 
+                      <i class="fa fa-search" aria-hidden="true"></i> 
+                      <input type="search" placeholder="Enter Payment Ref number" autocomplete="off"/>
+                    </p>
+                    </nav>
+                     <ul class="all_students_container">
+                       <li class="a_student">
+                          <img src="esutlogo.jpg" alt="esutlogo"/>
+                          <span>besongdilan@g...</span>
+                          <span>2019030187292</span>
+                          <span>Dilan...</span>
+                       </li>
+                    </ul>
+  
+               </div> 
+           </footer>
+         
+          </main>
+      </section>           
+  </body>
+</html>

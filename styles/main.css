@@ -1,0 +1,144 @@
+*{
+   padding: 0; 
+   margin: 0; 
+   font-family: system-ui;
+   overflow-x: hidden;             
+}
+html {
+   font-size: 14px;
+}
+:root {
+  --esut_color:rgb(70, 14, 14);
+  --color_gray:#fff
+}
+body {
+   box-sizing: border-box;
+   overflow-x: hidden; 
+   display:flex;
+   height: 100vh;             
+}
+canvas {
+   width:100%;
+   height:inherit;
+}
+
+.side_bar {
+    border:1px solid #ccc;
+    width:10%; 
+    background-color:var(--esut_color); 
+                
+}
+.side_bar ul {
+   height: 100%;
+   display: flex;
+   color: var(--color_gray);
+   flex-direction: column;
+   align-items:center;
+   justify-content: space-evenly;
+}
+.main_section {
+    width: 100%;              
+}
+main {
+  height: 100vh;
+  margin-top:8px; 
+  overflow:auto;            
+}
+
+.adminNav {
+   width: 100%;
+   background-color: #ccc;
+   height: 40px;
+   display: flex;
+   justify-content: space-between;
+   padding: 0 8px 0 6px;
+   align-items: center;
+}
+.theme_adminProfile {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   gap: 6px;
+   width:200px;
+}
+.adminNav .profile {
+   display: flex;
+   align-items: center;
+   gap:3px;
+}
+.adminNav .profile img {
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   border:2px solid var(--esut_color)
+}
+
+main > div {
+  border: 1px solid #ccc;
+  text-align: center;
+  height: 300px;               
+}
+header {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap:6px;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 6px;
+  
+}
+header div {
+   border: 1px solid #ccc;
+   width: 310px;
+   height: 200px;
+   text-align: center;
+}
+.students_Data_section {
+   display:flex;
+   align-items: center;
+   justify-content:space-around;
+   gap:6px;
+}
+.students_Data_section > div {
+   width:99.99%;
+   border: 1px solid #ccc;
+   text-align: center;
+   height: 350px;
+}
+
+
+ .year_six_graph{
+   width: 98%;
+   height: 230px;
+   margin: 0 auto;
+   margin-bottom: 6px;
+} 
+@media screen  and (max-width:900px) {
+   .students_Data_section {
+      flex-direction: column;
+   }
+}
+
+@media  screen and (max-width:700px) {
+body {
+   flex-direction:column-reverse; 
+   grid-template-columns:1fr;           
+} 
+.side_bar {
+   position: fixed;              
+   height: 25px; 
+   width: 100%; 
+   border-top-right-radius:10px;
+   border-top-left-radius:10px;         
+}  
+main {
+   grid-template-columns: 1fr;               
+} 
+
+}
+
+@media screen and (max-width:605px){
+   header div {
+      width: 100%;
+   }
+}
